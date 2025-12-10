@@ -1,0 +1,18 @@
+[
+  {
+    "step": "Navigate to https://app.applitest.co.il",
+    "expected": "Page is redirected to https://login.applitest.co.il/... Login form is displayed"
+  },
+  {
+    "step": "Login to service",
+    "expected": "Page is redirected to https://app.applitest.co.il. Email used to login should be displayed at top right of page"
+  },
+  {
+    "step": "In Build > All tests, search for tests name starting with Claude",
+    "expected": "Page move to 'List of Al tests' page; all tests in list starts with 'Claude'"
+  },
+  {
+    "step": "Click on 1st test in list",
+    "expected": "Page is now detail test page for the click test; the title of the main area is the name of the test that was click on"
+  }
+]

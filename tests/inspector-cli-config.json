@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "default-server": {
+      "command": "node",
+      "args": ["-r", "ts-node/register", "src/cli.ts"]
+    }
+  }
+}

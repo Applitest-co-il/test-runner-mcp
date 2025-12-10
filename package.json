@@ -1,0 +1,69 @@
+{
+  "name": "@applitest/test-runner-mcp",
+  "version": "0.10.0",
+  "description": "MCP server allowing to automate web and mobile app application thru test-runner (above webdriver.io)",
+  "keywords": [
+    "MCP",
+    "TestRunner",
+    "WebdriverIo",
+    "Claude"
+  ],
+  "homepage": "https://github.com/Applitest-co-il/test-runner-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/Applitest-co-il/test-runner-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Applitest-co-il/test-runner-mcp.git"
+  },
+  "license": "MIT",
+  "author": "Daniel Yaghil",
+  "main": "dist/cli.js",
+  "bin": {
+    "mcphttp": "./dist/http.js",
+    "mcpcli": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "dev": "tsc --watch",
+    "cli": "node dist/cli.js",
+    "cli:debug": "node --inspect -r ts-node/register src/cli.ts",
+    "http": "node ./dist/http.js",
+    "http:debug": "node --inspect -r ts-node/register src/http.ts",
+    "inspector:cli": "npx @modelcontextprotocol/inspector --config tests/inspector-cli-config.json",
+    "inspector:http": "npx @modelcontextprotocol/inspector --config tests/inspector-http-config.json",
+    "lint:check": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format:write": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "type:check": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.17.2",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.7.1",
+    "rimraf": "^6.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@applitest/test-runner": "^0.10.13",
+    "@modelcontextprotocol/sdk": "^1.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "zod": "^4.1.13"
+  }
+}
