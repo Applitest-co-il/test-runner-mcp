@@ -341,7 +341,7 @@ Full command list: https://github.com/Applitest-co-il/test-runner/blob/main/docs
 
 ### `generate-test-json`
 
-**The Cost-Saving Feature!** - Generates test-runner JSON format from your AI conversation
+Generates test-runner JSON format from your AI conversation
 
 ```
 Use this prompt to:
@@ -405,7 +405,7 @@ Parameters:
 
 ---
 
-### 💰 **Cost-Effective Workflow - Generate Reusable Tests**
+### 💰 **Effective Workflow - Generate Reusable Tests**
 
 **You**: "Now use the generate-test-json prompt to create a reusable test from what we just did"
 
