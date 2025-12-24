@@ -23,7 +23,7 @@ Transform how you interact with test automation:
 ### Core Technology
 
 - 🎯 **Powered by Applitest Test Runner** - Uses [@applitest/test-runner](https://www.npmjs.com/package/@applitest/test-runner) ([GitHub](https://github.com/Applitest-co-il/test-runner)) as the automation engine for all browser and mobile interactions
-- 🔄 **AI-Generated → Standalone Tests** - Generate test-runner JSON format that can be replayed without MCP or AI (huge cost savings!)
+- 🔄 **AI-Generated → Standalone Tests** - Generate test-runner JSON format that can be replayed without MCP or AI
 - 📝 **Export & Reuse** - Convert AI conversations into reusable test automation scripts
 
 ### Capabilities
